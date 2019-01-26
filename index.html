@@ -4,11 +4,38 @@
   <meta charset="utf-8">
   <title>HalfwayFrontendWeb</title>
   <base href="/">
+  <!-- <p id="startLat"></p>
+  <p id="startLon"></p> -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<link rel="stylesheet" href="styles.3ff695c00d717f2d2a11.css"></head>
+<link rel="stylesheet" href="styles.2b29ff67f805a02873f2.css"></head>
 <body>
   <app-root></app-root>
-<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.3bfd66addbd0d2814591.js"></script><script type="text/javascript" src="main.0401bd3a8c8a85daa85d.js"></script></body>
+  <!-- <div id="map"></div>
+  <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.6390972, lng: -120.9968782},
+          zoom: 10
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTR1tSdwSPeBMEPc_pmhDvTyzNstDly8g&callback=initMap"
+    async defer></script>
+    // <script src="http://maps.googleapis.com/maps/api/js"></script> -->
+
+    <!-- <script>
+      window.onload = function() {
+        var startPos;
+        var geoSuccess = function(position) {
+          startPos = position;
+          document.getElementById('startLat').innerHTML = startPos.coords.latitude;
+          document.getElementById('startLon').innerHTML = startPos.coords.longitude;
+        };
+        navigator.geolocation.getCurrentPosition(geoSuccess);
+      };
+    </script> -->
+<script type="text/javascript" src="runtime.ec2944dd8b20ec099bf3.js"></script><script type="text/javascript" src="polyfills.3bfd66addbd0d2814591.js"></script><script type="text/javascript" src="main.8f1fd4233e811027988a.js"></script></body>
 </html>
